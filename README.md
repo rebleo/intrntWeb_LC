@@ -5,7 +5,7 @@
 	Professor: Rebecca Leopold
 	Email: RLeopold@fordham.edu
 	Course Wiki: https://github.com/rebleo/intrntWeb_LC/wiki
-
+---
 #### Course Description:
 This course covers web programming in the Internet and interactive environment. Students will gain understanding of operating system usage on a server and interactive web system design. Languages used include HTML, CSS, Java Script in addition to overviews of backend systems in Node + Express and PHP, MySQL + AJAX. (Subject to change!!).
 
@@ -32,9 +32,9 @@ Attendance is mandatory and will be taken at the beginning of each class. For re
 
 This class meets for 1 hour and 15 minutes twice per week. Students are expected to come on time, because there is a lot of material to cover. Students who come in later than 20 minutes after the class started will be marked absent. If you know in advance that you will not be able to attend a class, email me beforehand and explain why.
 
-3 unexcused latenesses = one absence.
-3 unexcused absences = one half grade decrease (e.g. an A becomes an A-).
-More than 3 unexcused absences a student will receive a failing grade.
+ * 3 unexcused latenesses = one absence.
+ * 3 unexcused absences = one half grade decrease (e.g. an A becomes an A-).
+ * More than 3 unexcused absences a student will receive a failing grade.
 ---
 #### Suggested Texts:
 * Learning Web Design - Jennifer Niederst Robbins
