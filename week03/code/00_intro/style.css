@@ -1,0 +1,84 @@
+/* this is a comment in CSS */
+
+h2 {
+	font-family: Times;
+	background: DarkCyan;
+	/* lowercase + capitalize */
+	text-transform: uppercase;
+	text-decoration: underline;
+	letter-spacing: 0.2em;
+	/* https://www.w3schools.com/css/css3_shadows.asp */
+	text-shadow: 1px 1px 5px #000000;
+}
+
+h3 {
+	background: rgba(238,62,200);
+	font-weight: bold;
+		text-align: center;
+}
+
+h4 {
+	background: rgba(130,62,200);
+	font-size: 75%;
+
+	text-decoration: line-through;
+	word-spacing: 1em;
+}
+body {
+	font-family: Avenir;
+	font-size: 15px;
+	background: rgb(200,200,200);
+}
+
+div{
+	background: rgb(255,255,255);
+	line-height: 1.8em;
+}
+
+/*this is the syntax for adding style a class */
+.theAuthor{
+	background: rgb(255,0,0);
+		/* HSL: Hue, Saturation + Lightness
+		Hue - as an angle between 0 + 360
+		Saturation - as a precentage
+		Lightness - as a precentage: 0% = white, %50 = normal + 100% is black
+		Alpha - expressed btw 0 _ 1.0 : 0.5 = 50% transparency, .75 is 75% transparency*/
+	background: hsl(0,100%,100%, 0.2);
+	text-align: center;
+}
+a:link{
+	color:pink;
+}
+a:visited{
+	color:yellow;
+}
+a:hover {
+	color:green;
+	font-size:64px;
+}
+span {
+	font-style: italic;
+}
+
+
+
+
+p {
+	background:pink;
+	border-radius: 100px
+	color:white;
+
+}
+
+
+.marginEx {
+
+	border: 2px solid black;
+	padding: 10px;
+}
+
+
+
+
+
+

@@ -1,0 +1,37 @@
+/* this is a comment in CSS */
+
+h1 {
+	background: rgb(220,220,220);
+
+
+}
+
+body {
+	background: rgb(200,200,200);
+	/* color: rgb(150,150,150); */
+ 	width: 500px;
+	height: 1440px;
+	margin: 0 auto;
+
+}
+
+p {
+	background: white;
+	border: 2px solid green;
+	padding: 10px;
+
+}
+
+/* p:nth-of-type(1) means do the following styling ot the first paragarph */
+ p:nth-of-type(1) {
+ position: absolute;
+ background: lime;
+ top: 10px;
+	left: 30px;
+ z-index: 1;
+} 
+
+.thePosition{
+	background: pink;
+
+}
