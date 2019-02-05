@@ -1,0 +1,33 @@
+h2 {
+	font-family: Times;
+	background: DarkCyan;
+ text-align: center;
+}
+
+
+body {
+	font-family: 'Avenir';
+}
+div.theFirstExample {
+    background-color: green;
+    width: 40px;
+    overflow-x: scroll;
+}
+
+div.theSecondExample{
+    background-color: pink;
+    width: 40px;
+    overflow-x: hidden;
+}
+
+div.theThirdExample{
+    background-color: pink;
+    width: 40px;
+    overflow-x: auto;
+}
+
+div.theFourthExample {
+    background-color: pink;
+    width: 40px;
+    overflow-x: visible;
+}

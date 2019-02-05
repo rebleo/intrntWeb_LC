@@ -1,0 +1,41 @@
+/* animation code adapted from: https://www.amazon.com/Learning-Web-Design-Beginners-JavaScript/dp/1449319270 */
+
+.theFloat{
+	float: left;
+	width: 45%;
+	height: 45%x;
+	border-radius: 5px;
+	padding: 1em;
+	/* background-color is a great CSS property to use to see if an animation is working */
+	 background-color: green; 
+	transition-property: background-color, width; transition-duration: 1s; transition-timing-function: ease-in-out; transition-delay: 0.5s;
+
+}
+
+.theFloat:active {
+	 background-color: purple; 
+	width: 95%;
+}
+
+.theText {
+	font-family: 'Avenir';
+    background-color: pink;
+  	padding: 10px;
+	border: 2px solid;
+	border-radius: 5px;
+}
+
+
+/* this is code for the class' animation itself */
+.theAuthor {
+	font-family: 'Times';
+	text-decoration: bold;
+	font-size: 34px;
+	background-color: blue;
+	transition-property: background-color, color, letter-spacing; transition-duration:.1s, 2s, 1s; transition-timing-function: ease-out, ease-in, ease-out;
+}
+
+/* this is code for when the viewer interacts w/ the class */
+.theAuthor:hover, .theAuthor:focus {
+	background-color: red; letter-spacing: 7px; color: black;
+}

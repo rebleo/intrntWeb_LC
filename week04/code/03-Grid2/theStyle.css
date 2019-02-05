@@ -1,0 +1,41 @@
+/* code from: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout */
+
+.theWrapper {
+  display: grid;
+	/* check out the "fr uni" flexible unit: https://alligator.io/css/css-grid-layout-fr-unit/ */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: minmax(100px, auto);
+	row-gap: 1em;
+	column-gap: 20px;
+
+}
+
+/* * remember * means ALL in CS speak */
+/* https://www.w3schools.com/css/css3_box-sizing.asp */
+* {box-sizing: border-box;}
+
+.theWrapper {
+  border: 2px solid;
+  border-radius: 5px;
+  background-color: pink;
+  padding: 1em;
+}
+
+
+/* this will apply the followingn styling to everything inside the */
+
+.theWrapper > div {
+  border: 2px solid;
+	/* margin: .1em; */
+  border-radius: 5px;
+  background-color: green;
+  padding: 3em;
+}
+
+.one {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
