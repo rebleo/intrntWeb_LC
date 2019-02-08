@@ -1,0 +1,25 @@
+/*
+https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
+*/
+
+/*.* {
+  box-sizing: content-box;
+  width: 100%;
+
+}*/
+/*border box*/
+.parent {
+  box-sizing: border-box;
+  width: 100%;
+  border: solid #5B6DCD 10px;
+  padding: 5px;
+}
+
+/* content box*/
+.child {
+  box-sizing: content-box;
+  width: 100%;
+  border: solid Pink 10px;
+  padding: 5px;
+}
+
