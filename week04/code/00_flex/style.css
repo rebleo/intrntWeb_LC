@@ -12,11 +12,15 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/margin*/
 }
 
 .flexThing {
-	border-radius: 25px;
+	/* border-radius: 25px; */
 	background-color: pink;
 	margin: 5px;
 	width: 50px;
 	height: 50px;
+}
+
+.bew {
+	background-color: blue;
 }
 
 nav {
@@ -30,12 +34,12 @@ nav {
 a {
   font-weight: bold;
   font-size: 24px;
-  background-color: green;
+  background-color: rgb(255, 100,100);
   color: white;
   padding: 5px 25px;
 /*	 makes rounded border on rectangle */
    border-radius: 0px;
 }
 a:hover{
-	color:pink;
+	color:yellow;
 }
