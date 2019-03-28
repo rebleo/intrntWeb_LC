@@ -68,8 +68,7 @@ In your terminal:
 node myServer.js
 ```
 #### Step 5: Other Routes
-Of course a route can be for any “path”, here is an example for “/somethingelse”:
-```
+Of course a route can be for any “path”, here is an example for “/otherData”:
 theApp.get('/otherData', function (theRequest, theResponse) {
   theResponse.send('Hello Worlds!!')
 })
