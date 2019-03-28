@@ -19,15 +19,18 @@ Check to see if you have Node installed. On your command line - in your project 
 ```
 node -v
 ```
-If you have node installed you should see something like this:
-![](imgs/step1.png)
 
-wndws: [dwnld node](https://nodejs.org/en/)
-mac (if you have [Homebrew](https://brew.sh/) installed): brew install node
+* If you have Windows: [dwnld node](https://nodejs.org/en/)
+* If you have MacOS (if you have [Homebrew](https://brew.sh/) installed): brew install node
 
 like python once installed you can run node by typing "node" into the command line
-
-exit node w: CMMND or CNRTL C
+```
+node [then start writing javascript]
+```
+To quit out of node:
+```
+CNTRL / CNTRL C
+```
 
 #### Step 2: Initiating Node Packages w/ NPM
 npm is the node package manager. It's a common way to install any node package which add to the base functionality.  
@@ -65,7 +68,7 @@ npm install express --save
 #### Step 4: Writing our API in a new .js file
 1. Now we can create and open up our javascript file. I’ll name the sample code theServer.js. Inside our main JavasScript file - in our text editor - we’ll need to require Express so we can use it. 
 ```
-const express = require('express');.
+const theExpress = require('express');.
 ```
 2. Now that we’ve pulled in the Express framework, we can use it. We’ll create an express app
 ```
@@ -83,6 +86,10 @@ localhost:12345/
 In your terminal:
 ```
 node myServer.js
+```
+to quit yr server
+```
+command C
 ```
 ##### Server Reloading
 While you are developing you may make lots of changes to your code and it may be annoying to have to stop and restart your server constantly.
@@ -142,5 +149,9 @@ function specialFunction(theRequest, theResponse) {
   let theMessage = '<h1>Headline</h1><p>Some information on this topic.</p>';
   theResponse.send(theMessage);
 }
+```
+#### Serving a Static Webpage (HTML, CSS, + front end JS)
+```
+theApp.use(theExpress.static('pages/viewer'))
 ```
 
