@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-	<title>Week 11 - JS</title>
+	<title>Week 11 </title>
 	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 	<link href="style.css" rel="stylesheet" type="text/css">
 	<meta charset="utf-8">
@@ -10,20 +10,24 @@
 </head>
 
 <body>
-	<p>
-		this great website
-	</p>
 
-	<form method="GET">
-		Your Name: <input type="text" name="theirText"></input>
+
+
+	<!-- <form method="POST" action="/getTheData"> -->
+	<form method="GET" action="/getTheData">
+		Name: <input id="theUser" type="text" name="userName" value="..." />
 		<input type="submit" name="theSubmitButton" value="Submit" />
-		<input type="hidden" name="inVisible" value="..." />
-		<br>
-		<br>
-		<input type="button" name="theButton" value="click!" id="thisAwesomeButton" />
+
+	</form>
+	<br>
+	<form method="GET" action="/getRandomTxt">
+		<button id="thisAwesomeButton"> what are these words? </button>
 	</form>
 	<br>
 	<br>
+	<form method="GET" action="/getAbout">
+		<button> about the author </button>
+	</form>
 
 </body>
 
