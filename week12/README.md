@@ -1,4 +1,5 @@
 ### Week 12
+### Pair Programing - Building a Web App w/ Express
 
 #### Express Templates
 As we have experienced, generating HTML within a node.js/Express server can be painful. Fortunately, there is a solution called templates which allow you to create your HTML as a separate file and have the Express template system bind data to your variables.
@@ -8,7 +9,7 @@ There are many [templating systems](https://github.com/expressjs/express/wiki?_g
 The first step to using [ejs](https://www.npmjs.com/package/ejs) with Express is to install the module:
 
 ```
-npm i ejs
+npm install ejs
 
 ```
 To use ejs in our express app, we set the “view engine” to be “ejs” and then create a template to use
@@ -46,6 +47,13 @@ The “render” function takes in the template file and binds the “data” to
 This is an array of data:
 ```
 //var theData = {users: [{First: "Rebecca", Last: "Leopold"}, {First: "Larry", Last: "Jerry"}]};
+```
+you can use a “forEach” in the template:
+```
+<% people.forEach(function(person) {  %>
+		<h2><%= person.first %><h2>
+		<h3><%= person.last %></h3>
+<% }); %>
 ```
 
 
@@ -85,13 +93,13 @@ An array of JSON objects:
 	{
 		firstName: "Kanye,
     	lastName: "West"
-	}	
+	}
 ]
 ```
 A JSON of an array of JSON objects:
 ```
-{ Artists: 
-	[ 
+{ Artists:
+	[
 		{
 			firstName: "Donald",
 	    	lastName: "Glover"
@@ -104,7 +112,7 @@ A JSON of an array of JSON objects:
 		{
 			firstName: "Kanye,
 	    	lastName: "West"
-		}	
+		}
 	]
 }
 ```
@@ -124,5 +132,18 @@ Fortunately, there are a few libraries such as jQuery that take much of the pain
 More Information: [A Brief History of Ajax by Aaron Swartz](http://www.aaronsw.com/weblog/ajaxhistory)
 
 #### USING JQUERY’S AJAX FUNCTIONS TO LOAD JSON
-#### BUILDING SIMPLE WEBSERVICES USING NODE AND EXPRESS
-As you may have seen in previous notes, we can easily send back JSON formatted data rather than HTML from our Node/Express servers. 
+You can load and parse JSON easily using jQuery.
+
+```
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+	console.log("here!");
+	var blue = [];
+	 $.getJSON( "myGreatData.json", function( myData ) {
+
+	   for (var i = 0 ; i < myData.colors.length; i++){
+		blue = myData.colors[i].blue;
+
+	}
+  </script>
+```
