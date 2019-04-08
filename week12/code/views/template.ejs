@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	<title>Week 12 </title>
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<meta charset="utf-8">
+	<script src="potato.js" defer></script>
+
+</head>
+
+
+
+	<body>
+	
+
+		<% for (var i = 0; i < allTheData.length; i++) { %>
+		<h1>First Name: <span id="first"><%=allTheData[i].first%></span> Last Name:<span id="last"><%=allTheData[i].last%></span></h1>
+		<% } %>
+
+		<h2> what a great webapp today</h2>
+	       
+	</body>
+</html>
